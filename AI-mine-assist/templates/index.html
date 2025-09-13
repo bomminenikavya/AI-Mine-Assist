@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mine Assist Chat</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .chat-container {
+            height: calc(100vh - 160px);
+            overflow-y: auto;
+        }
+        .chat-message {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+        .user-message {
+            background-color: #e2e8f0;
+            text-align: right;
+        }
+        .ai-message {
+            background-color: #edf2f7;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold mb-4">AI Mine Assist Chat</h1>
+        <div id="chatContainer" class="chat-container bg-white rounded-lg shadow-md p-4 mb-4"></div>
+        <div class="flex">
+            <input type="text" id="userInput" class="flex-grow p-2 border rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Type your message here..." autocomplete="off"/>
+            <button id="sendButton" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-r-lg">Send</button>
+        </div>
+    </div>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
